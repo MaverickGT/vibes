@@ -1,0 +1,56 @@
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 8rem 2rem;
+    margin: 2rem auto;
+    max-width: 1400px;
+    border-radius: 2rem;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(224, 242, 254, 0.85) 100%), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 50px -10px rgba(1, 159, 158, 0.15), 0 0 0 6px rgba(255, 255, 255, 0.6);
+    overflow: hidden;
+}
+
+.pill {
+    display: inline-block;
+    background-color: var(--white);
+    padding: 0.6rem 2rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.title {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.title span.teal {
+    color: var(--primary);
+}
+
+.title span.coral {
+    color: var(--coral-accent);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}

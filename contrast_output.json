@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Text Dark on Cream BG",
+    "hex1": "#222420",
+    "hex2": "#f9f1e1",
+    "ratio": "13.94"
+  },
+  {
+    "name": "Text Light on Cream BG",
+    "hex1": "#555555",
+    "hex2": "#f9f1e1",
+    "ratio": "6.64"
+  },
+  {
+    "name": "Primary Button (White on Teal Primary)",
+    "hex1": "#ffffff",
+    "hex2": "#019f9e",
+    "ratio": "3.25"
+  },
+  {
+    "name": "Teal Accent Text on Cream BG",
+    "hex1": "#019f9e",
+    "hex2": "#f9f1e1",
+    "ratio": "2.90"
+  },
+  {
+    "name": "Coral Accent Text on Cream BG",
+    "hex1": "#a16356",
+    "hex2": "#f9f1e1",
+    "ratio": "4.22"
+  },
+  {
+    "name": "Coral Button (White on Yellow Callout BG)",
+    "hex1": "#ffffff",
+    "hex2": "#e3b819",
+    "ratio": "1.89"
+  },
+  {
+    "name": "Navbar Links (Text Light on White)",
+    "hex1": "#555555",
+    "hex2": "#ffffff",
+    "ratio": "7.46"
+  },
+  {
+    "name": "Navbar Hover (Text Dark on White)",
+    "hex1": "#222420",
+    "hex2": "#ffffff",
+    "ratio": "15.66"
+  },
+  {
+    "name": "Pill Text (White on Teal Primary)",
+    "hex1": "#ffffff",
+    "hex2": "#019f9e",
+    "ratio": "3.25"
+  }
+]

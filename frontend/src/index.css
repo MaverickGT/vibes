@@ -1,0 +1,173 @@
+:root {
+  /* Extracted Logo Colors */
+  --primary: #017676;
+  /* Darkened Teal for WCAG 4.5:1 contrast */
+  --primary-hover: #015e5e;
+  --text-dark: #222420;
+  /* Dark Charcoal roughly (34,36,32) */
+  --text-light: #555555;
+  --bg-color: #f9f1e1;
+  /* Off-white roughly (249,241,225) */
+  --white: #ffffff;
+  --card-bg: #ffffff;
+  --badge-hot: #e0f2fe;
+  --badge-hot-text: #0284c7;
+  --badge-trending: #fee2e2;
+  --badge-trending-text: #ef4444;
+  --badge-new: #dcfce7;
+  --badge-new-text: #16a34a;
+  --callout-bg: #e3b819;
+  /* Yellow Accent roughly (227,184,25) */
+  --callout-hover: #cba316;
+  --coral-accent: #8e5043;
+  /* Darkened Rust/Coral for WCAG 4.5:1 contrast */
+  --gray-200: #d1cbc1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'HPE Graphik';
+  src: url('/fonts/HPE Graphik-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HPE Graphik';
+  src: url('/fonts/HPE Graphik-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HPE Graphik';
+  src: url('/fonts/HPE Graphik-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HPE Graphik';
+  src: url('/fonts/HPE Graphik-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'HPE Graphik', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  /* Rule 4: Minimum 16px body text */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'HPE Graphik', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  max-width: 70ch;
+  /* Rule 7: Line Length */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+button,
+a {
+  /* Rule 4: Touch Targets */
+  min-height: 44px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(1, 159, 158, 0.3);
+}
+
+.btn-outline {
+  background-color: var(--white);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-outline:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-coral {
+  background-color: var(--callout-bg);
+  color: var(--text-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.btn-coral:hover {
+  background-color: var(--callout-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(227, 184, 25, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}

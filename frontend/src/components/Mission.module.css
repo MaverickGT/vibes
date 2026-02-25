@@ -1,0 +1,75 @@
+.missionContainer {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contentBox {
+    background-color: var(--white);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 1.5rem;
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--white) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-weight: 500;
+    font-size: 1.25rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+.imagePlaceholder::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(1, 169, 130, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+    .missionContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
