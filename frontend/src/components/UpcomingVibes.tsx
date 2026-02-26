@@ -9,7 +9,11 @@ export const UpcomingVibes: React.FC = () => {
     useEffect(() => {
         fetch('http://localhost:3000/api/events')
             .then(res => res.json())
-            .then(data => setEvents(data))
+            .then(data => {
+                if (Array.isArray(data)) {
+                    setEvents(data.slice(0, 1));
+                }
+            })
             .catch(err => console.error(err));
     }, []);
 
